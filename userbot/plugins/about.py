@@ -20,8 +20,7 @@ async def _(event):
    # if input_str == "Visit this page to know more about TeleBot.":
     await event.edit("Thanks")
     animation_chars = [
-            "**TeleBot**",
-            "[More Info](https://telegra.ph/TeleBot-07-08)"
+            "**TDemonBot**"
          ]
             
 
