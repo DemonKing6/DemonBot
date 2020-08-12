@@ -1,6 +1,6 @@
-# Ported from other Telegram UserBots for TeleBot
+# Ported from other Telegram UserBots for DemonBot
 # Kangers, don't remove this line 
-# @its_xditya
+# @Demon_King6
 
 from math import ceil
 import asyncio
@@ -21,7 +21,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             rev_text = query[::-1]
             buttons = paginate_help(0, CMD_LIST, "helpme")
             result = builder.article(
-                "© TeleBot Help",
+                "© DemonBot Help",
                 text="{}\nCurrently Loaded Plugins: {}".format(
                     query, len(CMD_LIST)),
                 buttons=buttons,
@@ -40,7 +40,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             # https://t.me/TelethonChat/115200
             await event.edit(buttons=buttons)
         else:
-            reply_pop_up_alert = "Please get your own Userbot from @TeleBotHelp , and don't use mine!"
+            reply_pop_up_alert = "Please get your own Userbot from @Demon_King6 , and don't use mine!"
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
 
