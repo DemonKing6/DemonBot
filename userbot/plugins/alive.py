@@ -61,6 +61,6 @@ async def amireallyalive(alive):
             f"` 🔸 DemonBot Uptime:` {uptime}\n"
             "` 🔸 Database Status:` **All OK 👌!**\n"
             f"` 🔹 My Master`: {DEFAULTUSER}\n\n"
-            "    [✨ GitHub Repository ✨](https://github.com/DemonKing6/TeleBot)", link_preview = False)
+            "    [✨ GitHub Repository ✨](https://github.com/DemonKing6/DemonBot)", link_preview = False)
         await borg.send_file(alive.chat_id, file=sticker) 
         await alive.delete()
