@@ -59,9 +59,9 @@ async def unload(event):
     shortname = event.pattern_match["shortname"]
     try:
         remove_plugin(shortname)
-        await event.edit(f"TeleBot has successfully unloaded {shortname}")
+        await event.edit(f"DemonBot has successfully unloaded {shortname}")
     except Exception as e:
-        await event.edit("TeleBot has successfully unload {shortname}\n{}".format(shortname, str(e)))
+        await event.edit("DemonBot has successfully unload {shortname}\n{}".format(shortname, str(e)))
 
 @command(pattern="^.load (?P<shortname>\w+)$", outgoing=True)
 async def load(event):
@@ -74,6 +74,6 @@ async def load(event):
         except:
             pass
         load_module(shortname)
-        await event.edit(f"TeleBot has successfully loaded {shortname}")
+        await event.edit(f"DemonBot has successfully loaded {shortname}")
     except Exception as e:
-        await event.edit(f"TeleBot could not load {shortname} because of the following error.\n{str(e)}")
+        await event.edit(f"DemonBot could not load {shortname} because of the following error.\n{str(e)}")
