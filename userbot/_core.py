@@ -24,7 +24,7 @@ async def install(event):
                 await event.edit("TeleBot Succesfully Installed The Plugin `{}`".format(os.path.basename(downloaded_file_name)))
             else:
                 os.remove(downloaded_file_name)
-                await event.edit("TeleBot returned an error! Plugin cannot be installed.")
+                await event.edit("DemonBot returned an error! Plugin cannot be installed.")
         except Exception as e:  # pylint:disable=C0103,W0703
             await event.edit(str(e))
             os.remove(downloaded_file_name)
